@@ -1,51 +1,31 @@
-
-// import 'bootstrap/dist/css/bootstrap.min.css';
-
 import './App.css'
+import AquariumCanvas from './components/Aquarium'
+import { useRef } from 'react';
+import Project from './components/Projects';
+import About from './components/About';
 
+// eslint-disable-next-line no-unused-vars
 function App() {
+  const scrollContainerRef = useRef(null);
   return (
     <>
+      <AquariumCanvas scrollContainer={scrollContainerRef} />
       <div className="full-container">
-            <div className="title-page">
-              <h1 className='sub-title'>
-                Tedy Fernando  
-              </h1>
-              <h1 className='title'>
-                Web Developer
-              </h1>
-            </div>
-      </div>
-      <div className="container">
-        <div className="row">
-          <div className="col">
-            <div className="vertical-center">
-              < h1>Project 1</h1>
-            </div>
-          </div>
-          <div className="col">
-            <div className="middle">
-              <p className='subtitle'>Description 2</p>
-            </div>
-          </div>
+        <div className="title-page">
+          <h1 className='sub-title'>
+            Tedy Fernando  
+          </h1>
+          <h1 className='title'>
+            Web Developer
+          </h1>
         </div>
       </div>
-      <div className="container">
-        <div className="row">
-          <div className="col">
-            <div className="vertical-center">
-              < h1>Project 1</h1>
-            </div>
-          </div>
-          <div className="col">
-            <div className="middle">
-              <p className='subtitle'>Description 2</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Project/>
+      <About/>
+
     </>
   )
 }
 
+// export default TestAquarium
 export default App

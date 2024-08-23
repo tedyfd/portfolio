@@ -1,0 +1,13 @@
+.project-title{
+    font-size: 1.5em;
+    color: var(--white);
+}
+
+.project-desc{
+    font-size: 0.5em; 
+    color: var(--white);
+}
+
+.project-title, .project-desc{
+    display: block;
+}

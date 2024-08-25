@@ -1,0 +1,19 @@
+.about-title{
+    font-size: 2.5em;
+    color: var(--white);
+}
+
+.about-desc{
+    font-size: 1.2em;
+    color: var(--white);
+}
+
+.about-padding{
+    padding: 20vh;
+}
+
+@media (max-width: 767px) {
+    .about-padding{
+        padding: 0;
+    }
+}

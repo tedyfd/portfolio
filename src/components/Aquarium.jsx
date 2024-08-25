@@ -1,4 +1,4 @@
-import { useGLTF } from "@react-three/drei";
+import { OrbitControls, ScrollControls, useGLTF } from "@react-three/drei";
 import { Suspense, useEffect, useRef, useState } from "react"
 import PropTypes from "prop-types";
 import aquariumScene from "../assets/3d/abstract_aquarium.glb";
@@ -11,7 +11,13 @@ function Aquarium({ scale, position }){
     const { scene } = useGLTF(aquariumScene) 
 
     return (
-      <primitive object={scene} ref={aquariumRef} position={position} scale={scale} rotation={[0, 2.2, 0]}/>
+      <> 
+        <OrbitControls enableZoom={false}/>
+        <mesh>
+        <primitive object={scene} ref={aquariumRef} position={position} scale={scale} rotation={[0, 2.2, 0]}/>
+        </mesh>
+        <ScrollControls/>
+      </>
     );
 }
 
@@ -67,7 +73,7 @@ export default function AquariumCanvas({ scrollContainer }) {
   return (
     <>
       <div className="canvas">
-        <Canvas camera={{ near: 150, far: 1000, position: [100, 0, 1000] }}>
+        <Canvas camera={{ near: 10, far: 2000, position: [100, 500, 1000] }}>
           <Suspense fallback={<CanvasLoader />}>
             <directionalLight position={[1, 1, 1]} intensity={5} />
             <ambientLight intensity={0.5} />

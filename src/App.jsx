@@ -1,25 +1,20 @@
 import './App.css'
+// eslint-disable-next-line no-unused-vars
 import AquariumCanvas from './components/Aquarium'
 import { useRef } from 'react';
 import Project from './components/Projects';
 import About from './components/About';
+import ObjectCanvas from './components/ObjectCanvas';
+import Hero from './components/Hero';
 
-// eslint-disable-next-line no-unused-vars
 function App() {
+  // eslint-disable-next-line no-unused-vars
   const scrollContainerRef = useRef(null);
   return (
     <>
-      <AquariumCanvas scrollContainer={scrollContainerRef} />
-      <div className="full-container">
-        <div className="title-page">
-          <h1 className='sub-title'>
-            Tedy Fernando  
-          </h1>
-          <h1 className='title'>
-            Web Developer
-          </h1>
-        </div>
-      </div>
+      <ObjectCanvas />
+      {/* <AquariumCanvas scrollContainer={scrollContainerRef} /> */}
+      <Hero/>
       <Project/>
       <About/>
 

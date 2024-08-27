@@ -1,10 +1,10 @@
 .about-title{
-    font-size: 2.5em;
+    font-size: 3em;
     color: var(--white);
 }
 
 .about-desc{
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: var(--white);
 }
 
@@ -12,8 +12,32 @@
     padding: 20vh;
 }
 
-@media (max-width: 767px) {
+.icon{
+    width: 10vh;
+    -webkit-filter: drop-shadow(0.5vh 0.5vh 0.5vh rgba(80, 84, 93, 0.347));
+	-webkit-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+.icon:hover {
+	-webkit-filter: drop-shadow(0vh 0vh 6vh rgba(255, 255, 255, 0.283));
+}
+
+
+.col-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+    padding: 0 5vw; 
+    box-sizing: border-box;
+}
+
+@media (max-width: 767px), (max-width: 1024px)  {
     .about-padding{
         padding: 0;
+    }
+    .col-icon{
+        flex-direction:row;
     }
 }

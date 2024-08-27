@@ -25,7 +25,7 @@ export default function Project(){
                         </div>
                         <div className="col">
                             <div className="middle">
-                            <p className='subtitle'>Description 2</p>
+                                <img src="/assets/business-porto.png" alt="" className='project-img'/>
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ export default function Project(){
                     <div className="row">
                         <div className="col">
                             <div className="middle">
-                            <p className='subtitle'>Description 2</p>
+                                <img src="/assets/game-porto.png" alt="" className='project-img'/>
                             </div>
                         </div>
                         <div className="col">

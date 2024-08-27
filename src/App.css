@@ -4,10 +4,10 @@
     --white: #ededed;
     --grey: #bdbdbd;
 
-    --container: #67cd7f;
+    /* --container: #67cd7f;
     --row: #5a449e;
     --col: #505050;
-    --vertical: #15327a;
+    --vertical: #15327a; */
     
     --container: ;
     --row: ;
@@ -22,14 +22,7 @@ body {
     background-color: #141414;
 }
 
-.full-container {
-    /* background-color: #8167cd; */
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    box-sizing: border-box;
-    position: relative;
-}
+
 
 .title-page{
     align-items: left;
@@ -71,16 +64,23 @@ body {
 
 @keyframes fadeEffect { 
     0%, 33%, 76% { 
-        opacity: 1; /* Fully visible */
+        opacity: 1; 
     }
     16%, 60%, 83% { 
-        opacity: 0; /* Fading out */
+        opacity: 0;
     }
     100% { 
-        opacity: 1; /* Fading in */
+        opacity: 1; 
     }
 }
 
+.full-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+}
 
 .container {
     background-color: var(--container);
@@ -89,7 +89,15 @@ body {
     display: flex;
     justify-content: center; 
     align-items: center;
-    padding: 10px 20px 15px 5px; 
+    padding: 1vh 2vh 1vh 2vh; 
+    box-sizing: border-box; 
+    flex-direction: column;
+}
+
+.full-container,
+.container {
+    width: 100%;
+    overflow-x: hidden;
     box-sizing: border-box; 
 }
 
@@ -109,7 +117,11 @@ body {
 
 .align-right{
     align-items: flex-end;
+    text-align: right;
+}
 
+.align-center{
+    text-align: center;
 }
 
 .middle{
@@ -128,34 +140,40 @@ body {
     width: 100%;
     height: 80vh;
     padding: 0 25vh 0 25vh;
-    justify-content: space-around; 
+    justify-content: flex-start; 
     background-color: var(--row);
+    box-sizing: border-box; 
 }
 
 .col {
     flex: 1; 
-    margin: 0 5vh; 
-    padding: 0 10vh 0 10vh;
+    display: flex;
+    width: 100%;
+    margin: 0 1vh; 
+    padding: 0 5vh 0 5vh;
     background-color: var(--col);
 }
 
-@media (max-width: 767px) {
+.mt-1{
+    margin-top: 10vh;
+}
+@media (max-width: 767px), (max-width: 1024px) {
     .title-page {
         padding-top: 30vh;
         padding-left: 5vh; 
     }
     .row{
-        padding: 0 5vh 0 5vh; 
+        padding: 0 2vh; 
     }
     .col {
-        flex: 0 0 100%; /* Makes the column take up the full width */
-        margin: 0; /* Reset margin to avoid extra space */
-        padding: 2vh 5vh; /* Adjust padding for mobile */
+        flex: 0 1 100%; 
+        margin: 0; 
+        padding: 2vh 1vh;
     }
     .title{
-        font-size: 3em;
+        font-size: 4em;
     }
     .sub-title{
-        font-size: 1.5em; 
+        font-size: 2.5em; 
     }
 }

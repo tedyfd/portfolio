@@ -14,6 +14,7 @@
 
 .icon{
     width: 10vh;
+    height: auto;
     -webkit-filter: drop-shadow(0.5vh 0.5vh 0.5vh rgba(80, 84, 93, 0.347));
 	-webkit-transition: all 0.5s linear;
 	-o-transition: all 0.5s linear;

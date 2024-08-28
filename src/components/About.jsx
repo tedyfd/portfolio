@@ -14,9 +14,9 @@ export default function About(){
                     <div className="row">
                         <div className="col about-padding">
                             <div className="vertical-center align-center">
-                                <h1 className="about-title">
+                                <h2 className="about-title">
                                     Hey!
-                                </h1>
+                                </h2>
                                 <p className="about-desc">Hi! I m Tedy, an IT & Web Developer based in Indonesia. My expertise includes system development, system design, and game development. Experience in developing websites allows me to develop systems quickly.</p>
                                 <p className="about-desc">In my free time, I do weight training, play video games, and 3D Design. I m always interested in hearing about new projects, so feel free to contact me.</p>   
                             </div>
@@ -27,13 +27,13 @@ export default function About(){
                         <div className="col">
                             <div className="col-icon">
                                 <a href="https://www.linkedin.com/in/tedyfd/" target="_blank"> 
-                                    <img src="/assets/linkedin.svg" alt="" className="icon "/>
+                                    <img src="/assets/linkedin.svg" alt="" className="icon" width="50" height="50" />
                                 </a>
                                 <a href="https://github.com/tedyfd" target="_blank">
-                                    <img src="/assets/github.svg" alt="" className="icon "/>
+                                    <img src="/assets/github.svg" alt="" className="icon"width="48" height="48" />
                                 </a>
                                 <a href="https://www.fiverr.com/tedyfernando" target="_blank">
-                                    <img src="/assets/fiverr.svg" alt="" className="icon "/>
+                                    <img src="/assets/fiverr.svg" alt="" className="icon"width="150" height="150" />
                                 </a>
                             </div>
                         </div>

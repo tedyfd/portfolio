@@ -10,13 +10,13 @@ export default function Hero(){
         >
             <div className="full-container">
                 <div className="title-page">
-                <div className='sub-title'>
-                    Tedy Fernando  
-                </div>
-                <div className='title'>
-                    <div className='title-work'></div>
-                    Developer
-                </div>
+                    <div className='sub-title'>
+                        Tedy Fernando  
+                    </div>
+                    <div className='title'>
+                        <div className='title-work'></div>
+                        Developer
+                    </div>
                 </div>
             </div>
         </motion.div>

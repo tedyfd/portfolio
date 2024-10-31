@@ -1,0 +1,31 @@
+body {
+    overflow-x: hidden;
+}
+.bg-dark1{
+    background-color: #00102A !important;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+.image{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 50%; 
+    transform: translateX(-50%); 
+    object-fit: cover; 
+}
+
+.text-stroke{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1.5px;
+}
+
+.persepective{
+    perspective: 2200px;
+}
+
+.viewport {
+    height: 100vh;
+}

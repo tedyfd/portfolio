@@ -1,16 +1,17 @@
-import './App.css'
-import Project from './components/Projects';
-import About from './components/About';
-import ObjectCanvas from './components/ObjectCanvas';
-import Hero from './components/Hero';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './App.css';
+import Home from './pages/Home';
+import Project from './pages/Project';
 
 function App() {
   return (
     <>
-      <Hero/>
-      <Project/>
-      <About/>
-      <ObjectCanvas />
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home/>}/>
+          <Route path='/project' element={<Project/>}/>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

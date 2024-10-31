@@ -1,6 +1,6 @@
+import { motion } from 'framer-motion'
+import { fadeIn } from '../transition.js'
 import './Projects.css'
-import {motion} from 'framer-motion'
-import {fadeIn} from '../transition.js'
 
 export default function Project(){
     return(
@@ -21,6 +21,7 @@ export default function Project(){
                                 <p className="project-desc">
                                 Assist business owners with reporting and recording their business activities, ensuring accurate documentation and compliance. My services include generating insightful reports, and implementing efficient systems for better decision-making.
                                 </p>
+                                <a href="/project">See More</a>
                             </div>
                         </div>
                         <div className="col">
@@ -52,6 +53,7 @@ export default function Project(){
                                 <p className="project-desc">
                                 I create games in my free time. My project is developed using Unreal Engine, and all assets are made by me. This game will be released on Steam. Stay tuned!
                                 </p>
+                                <a href="/project">See More</a>
                             </div>
                         </div>
                     </div>

@@ -73,7 +73,7 @@ export default function Project(){
                         <img src={mountain2} className="img-fluid image " alt="" />
                         <img ref={ref_branch} src={branch} className="img-fluid image " alt="" />
                     </div>
-                    <div ref={container} className="d-flex flex-wrap container vh-100">
+                    <div ref={container} className="d-flex flex-wrap container-fluid">
                         <div className="row">
                             <div className="col-6 flex-column pb-5">
                                 <div className="card">
@@ -93,7 +93,7 @@ export default function Project(){
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-6 flex-column pb-5">
+                            <div className="col-6 flex-column pb-5 last">
                                 <div className="card">
                                     <img src={sample3} className="card-img-top" alt="..."/>
                                     <div className="card-body">
